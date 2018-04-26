@@ -37,14 +37,14 @@ export class GalleryService {
 //   }
 
 getRandomImages(): Promise<any> {
-return this.http.get(this.unsplash_api + '?client_id=06074bd9f5ba3cf23f831cd9c61b3a2224ec2e28cfac7d79f0d7b5a5564a78aa&count=10')
+return this.http.get(this.unsplash_api + '?client_id=06074bd9f5ba3cf23f831cd9c61b3a2224ec2e28cfac7d79f0d7b5a5564a78aa&count=20')
       .toPromise()
       .then(response => response.json());
   }
 
 
   getRandomImagesTest(): Observable<Response> {
-    return this.http.get(this.unsplash_api + '?client_id=06074bd9f5ba3cf23f831cd9c61b3a2224ec2e28cfac7d79f0d7b5a5564a78aa&count=10');
+    return this.http.get(this.unsplash_api + '?client_id=06074bd9f5ba3cf23f831cd9c61b3a2224ec2e28cfac7d79f0d7b5a5564a78aa&count=20');
   }
 
   addDescription(id:string,url:string,description:string): Observable<Response> {

@@ -213,11 +213,6 @@ export class GalleryComponent implements OnInit {
   }
 
 
-  rout(){
 
-
-    this.router.navigate(['/home', { outlets: { child: ['groupRegister'] } }]);
-
-  }
 
 }
